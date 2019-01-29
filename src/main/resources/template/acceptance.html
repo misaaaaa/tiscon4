@@ -39,6 +39,7 @@
                         <div class="ui info message">
                             <div class="header">本保険は、以下の条件を満たす場合のみご加入頂くことができます。</div>
                             <ol class="ui list">
+                                <li value="●" th:if="${insOrder.insuranceType.equals('treatLady')}"><font color = "red">女性であること。</font></li>
                                 <li value="●">過去5年以内に、以下の病気で7日間以上にわたる医師の診察・検査・治療・投薬をうけていないこと。</li>
                                 <ol>
                                     <li value="－">がん</li>
