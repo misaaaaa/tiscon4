@@ -11,6 +11,8 @@ import nablarch.fw.web.HttpResponse;
  */
 public class IndexAction {
 
+    /*IWAMA-Gen test*/
+
     /**
      * トップ画面を表示する。
      *
