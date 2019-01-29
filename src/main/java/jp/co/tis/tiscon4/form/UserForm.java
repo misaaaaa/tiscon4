@@ -39,6 +39,7 @@ public class UserForm implements Serializable {
     private String yearOfBirth;
     private String monthOfBirth;
     private String dayOfBirth;
+    private String dateOfBirth;
 
     /** 郵便番号 */
     @Required
@@ -117,12 +118,12 @@ public class UserForm implements Serializable {
         this.alphabetName = alphabetName;
     }
 
-    public String getyearOfBirth() {
-        return yearOfBirth;
+    public String getdateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setyearOfBirth(String dateOfBirth) {
-        this.yearOfBirth = dateOfBirth;
+    public void setdateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getGender() {

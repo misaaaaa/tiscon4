@@ -48,6 +48,7 @@ public class Tiscon4DomainBean {
     private String yearOfBirth;
     private String monthOfBirth;
     private String dayOfBirth;
+    private String dateOfBirth;
 
     /** 郵便番号 */
     @ZipNumber
