@@ -92,6 +92,15 @@ public class OrderAction {
             throw new ApplicationException(message);
         }
 
+        /* 該当者以外はこの遷移画面をスキップする
+         * 　該当：経営自営|会社員|契約派遣|公務員|民間団体|他有職
+         * 非該当：主婦|学生|年金受給|パートアルバイト|他無職
+         */
+
+        if (form.getJob().matches("主婦|学生|年金受給|パートアルバイト|他無職")) {
+            return new HttpResponse("redirect://completed");
+        }
+
         UniversalDao.findAllBySqlFile(ZipcodeDto.class, "ZIPCODE_LIST");
 
         BeanUtil.copy(form, insOrder);
