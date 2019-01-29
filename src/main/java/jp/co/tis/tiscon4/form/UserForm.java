@@ -36,7 +36,9 @@ public class UserForm implements Serializable {
     /** 生年月日 */
     @Required
     @Domain("dateOfBirth")
-    private String dateOfBirth;
+    private String yearOfBirth;
+    private String monthOfBirth;
+    private String dayOfBirth;
 
     /** 郵便番号 */
     @Required
@@ -115,12 +117,12 @@ public class UserForm implements Serializable {
         this.alphabetName = alphabetName;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getyearOfBirth() {
+        return yearOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setyearOfBirth(String dateOfBirth) {
+        this.yearOfBirth = dateOfBirth;
     }
 
     public String getGender() {
