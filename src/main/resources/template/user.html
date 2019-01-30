@@ -232,6 +232,7 @@
                                 <td>
                                     <div class="field" th:classappend="${errors.hasError('job')} ? 'error'">
                                         <select name="job">
+                                            <option th:value="その他">-</option>
                                             <option th:value="経営自営">経営・自営業</option>
                                             <option th:value="会社員">会社員</option>
                                             <option th:value="契約派遣">契約・派遣社員</option>
