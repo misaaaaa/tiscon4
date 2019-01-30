@@ -102,7 +102,7 @@ public class OrderAction {
             //return create(req, ctx);
         }
 
-        UniversalDao.findAllBySqlFile(ZipcodeDto.class, "ZIPCODE_LIST");
+        //UniversalDao.findAllBySqlFile(ZipcodeDto.class, "ZIPCODE_LIST");
 
         BeanUtil.copy(form, insOrder);
 
