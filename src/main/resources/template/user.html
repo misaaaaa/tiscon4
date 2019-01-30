@@ -39,11 +39,11 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <label>お名前（漢字）<font color="red">＊</font>例：ＴＩＳ　太郎</label>
+                                    <label>お名前（漢字）<font color="red">＊</font></label>
                                 </td>
                                 <td>
                                     <div class="field" th:classappend="${errors.hasError('kanjiName')} ? 'error'">
-                                        <input type="text" name="kanjiName" th:value="${form.kanjiName}"/>
+                                        <input type="text" placeholder="例：ＴＩＳ　太郎" name="kanjiName" th:value="${form.kanjiName}"/>
                                         <p th:if="${errors.hasError('kanjiName')}"
                                            th:text="${errors.getMessage('kanjiName')}" class="error-message">
                                         </p>
@@ -55,9 +55,8 @@
                                     <label>お名前（カタカナ）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：ティーアイエス　タロウ</p>
                                     <div class="field" th:classappend="${errors.hasError('kanaName')} ? 'error'">
-                                        <input type="text" name="kanaName" th:value="${form.kanaName}"/>
+                                        <input type="text" placeholder="例：ティーアイエス　タロウ" name="kanaName" th:value="${form.kanaName}"/>
                                         <p th:if="${errors.hasError('kanaName')}"
                                            th:text="${errors.getMessage('kanaName')}" class="error-message">
                                         </p>
@@ -69,9 +68,8 @@
                                     <label>お名前（ローマ字）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：TIS TAROU</p>
                                     <div class="field" th:classappend="${errors.hasError('alphabetName')} ? 'error'">
-                                        <input type="text" name="alphabetName" th:value="${form.alphabetName}"/>
+                                        <input type="text" placeholder="例：TIS TAROU" name="alphabetName" th:value="${form.alphabetName}"/>
                                         <p th:if="${errors.hasError('alphabetName')}"
                                            th:text="${errors.getMessage('alphabetName')}" class="error-message">
                                         </p>
@@ -101,9 +99,8 @@
                                     <label>生年月日（半角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：1990/01/01</p>
                                     <div class="field" th:classappend="${errors.hasError('dateOfBirth')} ? 'error'">
-                                        <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}"/>
+                                        <input type="text" placeholder="例：1990/01/01" name="dateOfBirth" th:value="${form.dateOfBirth}"/>
                                         <p th:if="${errors.hasError('dateOfBirth')}"
                                            th:text="${errors.getMessage('dateOfBirth')}" class="error-message">
                                         </p>
@@ -115,9 +112,8 @@
                                     <label>郵便番号（半角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：123-4567</p>
                                     <div class="field" th:classappend="${errors.hasError('zipCode')} ? 'error'">
-                                        <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>
+                                        <input type="text" placeholder="例：123-4567" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>
                                         <p th:if="${errors.hasError('zipCode')}"
                                            th:text="${errors.getMessage('zipCode')}" class="error-message">
                                         </p>
@@ -129,9 +125,8 @@
                                     <label>ご住所（全角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：東京都新宿区西新宿８－１７－１</p>
                                     <div class="field" th:classappend="${errors.hasError('address')} ? 'error'">
-                                        <input type="text" name="address" th:value="${form.address}"/>
+                                        <input type="text" placeholder="例：東京都新宿区西新宿８－１７－１" name="address" th:value="${form.address}"/>
                                         <p th:if="${errors.hasError('address')}"
                                            th:text="${errors.getMessage('address')}" class="error-message">
                                         </p>
@@ -143,9 +138,8 @@
                                     <label>自宅電話番号（半角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：00-1111-2222</p>
                                     <div class="field" th:classappend="${errors.hasError('homePhoneNumber')} ? 'error'">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}"/>
+                                        <input type="text" placeholder="例：00-1111-2222" name="homePhoneNumber" th:value="${form.homePhoneNumber}"/>
                                         <p th:if="${errors.hasError('homePhoneNumber')}"
                                            th:text="${errors.getMessage('homePhoneNumber')}" class="error-message">
                                         </p>
@@ -157,10 +151,9 @@
                                     <label>携帯電話番号（半角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：080-0000-0000</p>
                                     <div class="field"
                                          th:classappend="${errors.hasError('mobilePhoneNumber')} ? 'error'">
-                                        <input type="text" name="mobilePhoneNumber"
+                                        <input type="text" placeholder="例：080-0000-0000" name="mobilePhoneNumber"
                                                th:value="${form.mobilePhoneNumber}"/>
                                         <p th:if="${errors.hasError('mobilePhoneNumber')}"
                                            th:text="${errors.getMessage('mobilePhoneNumber')}" class="error-message">
@@ -173,9 +166,8 @@
                                     <label>メールアドレス（半角）<font color="red">＊</font></label>
                                 </td>
                                 <td>
-                                    <p>例：sample@docomo.ne.jp</p>
                                     <div class="field" th:classappend="${errors.hasError('emailAddress')} ? 'error'">
-                                        <input type="text" name="emailAddress" th:value="${form.emailAddress}"/>
+                                        <input type="text" placeholder="例：sample@docomo.ne.jp" name="emailAddress" th:value="${form.emailAddress}"/>
                                         <p th:if="${errors.hasError('emailAddress')}"
                                            th:text="${errors.getMessage('emailAddress')}" class="error-message">
                                         </p>
