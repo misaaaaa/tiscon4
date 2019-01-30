@@ -98,8 +98,8 @@ public class OrderAction {
          */
 
         if (form.getJob().matches("主婦|学生|年金受給|パートアルバイト|他無職")) {
-            //return new HttpResponse("redirect://completed");
-            return create(req, ctx);
+            return new HttpResponse("redirect://completed");
+            //return create(req, ctx);
         }
 
         UniversalDao.findAllBySqlFile(ZipcodeDto.class, "ZIPCODE_LIST");
