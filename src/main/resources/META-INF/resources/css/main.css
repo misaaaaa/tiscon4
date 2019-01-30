@@ -46,6 +46,8 @@ ul.label {
 
 .field {
     text-align: left;
+    position: relative;
+    left: 0px;
 }
 
 .number {
