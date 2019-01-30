@@ -39,11 +39,9 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <label>お名前（漢字）<font color="red">＊</font></label>
-                                    <p style="color:red;">＊</p>
+                                    <label>お名前（漢字）<font color="red">＊</font>例：ＴＩＳ　太郎</label>
                                 </td>
                                 <td>
-                                    <p>例：ＴＩＳ　太郎</p>
                                     <div class="field" th:classappend="${errors.hasError('kanjiName')} ? 'error'">
                                         <input type="text" name="kanjiName" th:value="${form.kanjiName}"/>
                                         <p th:if="${errors.hasError('kanjiName')}"
